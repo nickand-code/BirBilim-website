@@ -13,10 +13,25 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .img-circle1{
+        width: 130px;
+        height: 162.5px;
+        display: inline-block;
+    }
     
     .paragraph{
         margin-top: 30px;
         font-size: 1.5rem;
-    
     }
+    .mobile-number{
+        margin: 30px auto;
+    }
+    .fas{
+        padding-right: 15px;
+    }
+    .mobile-number-text{
+        font-size: 1.8rem;
+    }
+
+    
 }

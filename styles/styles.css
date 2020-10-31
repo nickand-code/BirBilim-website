@@ -113,6 +113,10 @@
         padding-top: 10px;
     }
 
+    a:hover{
+        text-decoration: none;
+    }
+
     /* small screens */
     @media only screen and (max-width: 600px) {
         .nav-bar {

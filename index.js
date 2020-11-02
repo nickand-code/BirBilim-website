@@ -1,5 +1,5 @@
 var mySwiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
+    spaceBetween: 0,
 
     autoplay: {
         delay: 2000,
@@ -10,7 +10,6 @@ var mySwiper = new Swiper('.swiper-container', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
-        dynamicBullets: true,
       },
   
     // Navigation arrows

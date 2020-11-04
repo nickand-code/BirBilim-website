@@ -112,11 +112,6 @@
         background-color: white;
     }
 
-        /* Parallax */
-    .parallax1 {
-        width: 100%;
-    }
-
     /* small screens */
     @media only screen and (max-width: 767px) {
         
@@ -206,6 +201,16 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .parallax1 {
+            height: 300зx;
+            width: 100%;
+        }
+
+        .parallax-window {
+            min-height: 400px;
+            background: transparent;
         }
 
     }

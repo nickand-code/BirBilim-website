@@ -15,12 +15,6 @@
         font-family: 'Raleway', sans-serif;
     }
 
-
-    main{
-        margin-left: 5rem;
-        padding: 1rem; 
-    }
-
     .nav-bar {
         position: fixed;
         background-color: var(--bg-primary);
@@ -118,6 +112,11 @@
         background-color: white;
     }
 
+        /* Parallax */
+    .parallax1 {
+        width: 100%;
+    }
+
     /* small screens */
     @media only screen and (max-width: 767px) {
         
@@ -213,6 +212,11 @@
 
     /* large screens */
     @media only screen and (min-width: 768px) {
+        
+        main {
+            margin: 50px 200px 0 200px;
+        }
+
         .nav-bar {
             top: 0;
             height: 3.5rem;
@@ -240,6 +244,10 @@
 
         .t-item {
             padding-right: 1rem;
+        }
+
+        .link-text1 {
+            display: none;
         }
 
         .nav--link:hover{
@@ -272,33 +280,37 @@
 
         .paragraph{
             margin-top: 30px;
-            font-size: 1.8rem;
-            margin-left: 2.5rem;
+            font-size: 3.5rem;
         }
 
         .logo-part {
             align-items: center;
-            margin-left: 10%;
             margin-top: 5%;
         }
 
         /* Whatsapp */
         .mobile-number {
-            margin-top: 5%;
+            margin: 5rem 0 5rem 0;
         }
-
-        .mobile-number-h1 i:hover {
-            color: aqua;
+            
+        i:hover {
+            transition: var(--transition-speed);
+            color: #3A83FF;
         }
         
-        .mobile-number-h1 {
+        .mobile-number-text-lg {
             font-size: 3rem;
-            font-weight: 400;
             font-family: 'Lato', sans-serif;
+            font-weight: lighter;
         }
 
         .mobile-number-text {
             font-size: 2rem;
+        }
+
+        .mobile-number-p {
+            color: #3A83FF;
+            font-size: 1.5rem;
         }
 
         /* Swiper1 */
@@ -322,4 +334,16 @@
         .swiper-container .swiper-button-next {
             color: #FFFFFF;
         }
+
+        .parallax1 {
+            height: 600px;
+            width: 100%;
+        }
+
+        .parallax-window {
+            min-height: 700px;
+            background: transparent;
+        }
+
+
     }

@@ -2,7 +2,7 @@
         font-size: 16px;
         --text-primary: #b6b6b6;
         --text-secondary: #ececec;
-        --bg-primary: #23232e;
+        --bg-primary: #1E1E1E;
         --bg-secondary: #141418;
         --transition-speed: 600ms;
     }
@@ -231,20 +231,16 @@
         }
 
         .link-text {
-            font-size: 0.875rem;
+            font-size: 1rem;
         }
 
-        .link-text {
-            display: inline-block;
-            overflow: hidden;
-            max-width: 0;
-            transition: all 0.3s;
+        .logo-link {
+            display: none;
         }
 
-        .nav--link:hover .link-text {
-            max-width: 80px;
-            transition: var(--transition-speed);
-          }
+        .t-item {
+            padding-right: 1rem;
+        }
 
         .nav--link:hover{
             filter: grayscale(0%) opacity(1);

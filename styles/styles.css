@@ -68,15 +68,6 @@
         height: 50px;
     }
 
-    /* .logo svg{
-        transform: rotate(0deg);
-        transition: transform var(--transition-speed);
-    }
-
-    .nav-bar:hover .logo svg{
-        transform: rotate(-180deg);
-    } */
-
     .img-circle{
         width: 150px;
         height: 150px;
@@ -93,12 +84,15 @@
         text-decoration: none;
     }
     
-    .swiper-container .swiper-slide {
+    .s1, .s2 {
+        width: 100%;
+    }
+
+    .s1 .swiper-slide {
         background: #3A83FF;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 50px;
         color: white;
     }
 
@@ -110,6 +104,46 @@
     
     .swiper-pagination .swiper-pagination-bullet-active {
         background-color: white;
+    }
+
+    .s1 .swiper-button-prev {
+        color: #FFFFFF;
+    }
+
+    .s1 .swiper-button-next {
+        color: #FFFFFF;
+    }
+
+    .s2 .swiper-slide {
+        background: #3A83FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .s2 .swiper-button-prev {
+        color: #FFFFFF;
+    }
+
+    .s2 .swiper-button-next {
+        color: #FFFFFF;
+    }
+
+    .s3 .swiper-slide {
+        background: #ec524b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    .s3 .swiper-button-prev {
+        color: #FFFFFF;
+    }
+
+    .s3 .swiper-button-next {
+        color: #FFFFFF;
     }
 
     /* small screens */
@@ -160,25 +194,31 @@
         }
 
         
-        main{
+        .section{
             margin: 2rem;
-            padding-top: 3rem;
         }
 
-        .paragraph{
-            margin-top: 30px;
-            font-size: 1.3rem;
+        .paragraph-lg{
+            font-size: 4rem;
+            font-weight: 600;
+            color: #3A83FF;
+            padding-top: 3rem;
         }
         
         .mobile-number{
-            margin-top: 30px;
+            margin-top: 100px;
         }
         
         .fas{
             padding-right: 15px;
         }
+        
+        i:hover {
+            transition: var(--transition-speed);
+            color: #3A83FF;
+        }
     
-        .mobile-number-h1{
+        .mobile-number-text-lg{
             font-size: 2.3rem;
             font-family: 'Lato', sans-serif;
         }
@@ -187,14 +227,14 @@
             font-size: 1.8rem;
             margin-top: 15px;
             margin-bottom: 0;
-            font-weight: 600;
         }
 
         .mobile-number-p{
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             font-family: 'Lato', sans-serif;
+            color: #3A83FF;
         }
-
+           
         .img-circle{
             width: 150px;
             height: 150px;
@@ -204,12 +244,12 @@
         }
 
         .parallax1 {
-            height: 300зx;
+            height: 200px;
             width: 100%;
         }
 
         .parallax-window {
-            min-height: 400px;
+            min-height: 300px;
             background: transparent;
         }
 
@@ -218,8 +258,8 @@
     /* large screens */
     @media only screen and (min-width: 768px) {
         
-        main {
-            margin: 50px 200px 0 200px;
+        .section {
+            margin: 0 200px 0 200px;
         }
 
         .nav-bar {
@@ -283,14 +323,15 @@
             display: block;
         }
 
-        .paragraph{
-            margin-top: 30px;
-            font-size: 3.5rem;
+        .paragraph-lg{
+            font-size: 8rem;
+            font-weight: 600;
+            color: #3A83FF;
+
         }
 
         .logo-part {
-            align-items: center;
-            margin-top: 5%;
+            margin: 150px auto 100px auto;
         }
 
         /* Whatsapp */
@@ -318,37 +359,58 @@
             font-size: 1.5rem;
         }
 
+        .paragraph {
+            font-size: 5rem;
+            font-weight: 600;
+            color: #3A83FF;
+            padding-top: 100px;
+        }
+
         /* Swiper1 */
-        .swiper-container {
-            width: 100%;
+        .s1 {
             height: 300px;
             margin: 3.5rem auto;
         }
     
-        .swiper-container .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .s1 .swiper-slide {
             font-size: 60px;
         }
 
-        .swiper-container .swiper-button-prev {
-            color: #FFFFFF;
-        }
-
-        .swiper-container .swiper-button-next {
-            color: #FFFFFF;
-        }
-
+        /* Parallax */
         .parallax1 {
-            height: 600px;
+            height: 500px;
             width: 100%;
         }
 
         .parallax-window {
-            min-height: 700px;
+            min-height: 600px;
             background: transparent;
         }
 
+        /* Price  */
+        .s2, .s3 {
+            height: 600px;
+            margin: 5rem auto;
+        }
+    
+        .s2, .s3 .swiper-slide{
+            font-size: 60px;
+        }
+
+        .price-img {
+            width: 500px;
+            height: 300px;
+            border-radius: 20px;
+        }
+
+        .swiper-slide .row {
+            width: 80%;
+            align-items: center;
+        }
+
+        .price-text {
+            font-size: 2rem;
+            padding-top: 20px;
+        }       
 
     }

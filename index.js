@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.s1', {
     spaceBetween: 0,
 
     autoplay: {
@@ -6,23 +6,48 @@ var mySwiper = new Swiper('.swiper-container', {
     },
     
     loop: true,
-
-    // If we need pagination
     pagination: {
-        el: '.swiper-pagination',
+        el: '.pag1',
+        type: 'bullets',
       },
-  
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
   });
 
+var mySwiperPrice = new Swiper('.s2', {
+  spaceBetween: 0,
+  autoplay: {
+      delay: 2000,
+  },
+  
+  loop: true,
+  pagination: {
+      el: '.pag2',
+      type: 'bullets',
+    },
+  navigation: {
+    nextEl: '.swiper-button-next-priceS',
+    prevEl: '.swiper-button-prev-priceS',
+  },
+});
+
+var mySwiperPrice = new Swiper('.s3', {
+  spaceBetween: 0,
+  autoplay: {
+      delay: 2000,
+  },
+  
+  loop: true,
+  pagination: {
+      el: '.pag3',
+      type: 'bullets',
+    },
+  navigation: {
+    nextEl: '.swiper-button-next-priceI',
+    prevEl: '.swiper-button-prev-priceI',
+  },
+});
 $('.parallax-window').parallax({imageSrc: 'images/parallax1.jpg'});
   

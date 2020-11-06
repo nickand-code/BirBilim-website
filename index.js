@@ -3,6 +3,7 @@ var mySwiper = new Swiper('.s1', {
 
     autoplay: {
         delay: 2000,
+        disableOnInteraction: false,
     },
     
     loop: true,
@@ -20,6 +21,7 @@ var mySwiperPrice = new Swiper('.s2', {
   spaceBetween: 0,
   autoplay: {
       delay: 2000,
+      disableOnInteraction: false,
   },
   
   loop: true,
@@ -37,6 +39,7 @@ var mySwiperPrice = new Swiper('.s3', {
   spaceBetween: 0,
   autoplay: {
       delay: 2000,
+      disableOnInteraction: false,
   },
   
   loop: true,

@@ -52,5 +52,19 @@ var mySwiperPrice = new Swiper('.s3', {
     prevEl: '.swiper-button-prev-priceI',
   },
 });
+
+var mySwiperPrice = new Swiper('.s4', {
+  spaceBetween: 0,
+  autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+  },
+  
+  loop: true,
+  pagination: {
+      el: '.pag4',
+      type: 'bullets',
+    },
+});
 $('.parallax-window').parallax({imageSrc: 'images/parallax1.jpg'});
   

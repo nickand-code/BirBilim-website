@@ -115,35 +115,65 @@
     }
 
     .s2 .swiper-slide {
-        background: #3A83FF;
+        background:#FFFFFF;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: #0278ae;
     }
 
     .s2 .swiper-button-prev {
-        color: #FFFFFF;
+        color: #0278ae;
     }
 
     .s2 .swiper-button-next {
-        color: #FFFFFF;
+        color: #0278ae;
+    }
+
+    .s2 .swiper-pagination .swiper-pagination-bullet {
+        opacity: 1;
+        border:  #0278ae solid 1px;
+        background-color: transparent;
+    }
+    
+    .s2 .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #0278ae;
     }
 
     .s3 .swiper-slide {
-        background: #ec524b;
+        background: #FFFFFF;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: #ec524b;
     }
     
     .s3 .swiper-button-prev {
-        color: #FFFFFF;
+        color: #ec524b;
     }
 
     .s3 .swiper-button-next {
-        color: #FFFFFF;
+        color:#ec524b;
+    }
+
+    .s3 .swiper-pagination .swiper-pagination-bullet {
+        opacity: 1;
+        border:  #ec524b solid 1px;
+        background-color: transparent;
+    }
+    
+    .s3 .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #ec524b;
+    }
+
+    .s4 .swiper-pagination .swiper-pagination-bullet {
+        opacity: 1;
+        border:#3A83FF solid 1px;
+        background-color: transparent;
+    }
+    
+    .s4 .swiper-pagination .swiper-pagination-bullet-active {
+        background-color:#3A83FF;
     }
 
     /* small screens */
@@ -412,5 +442,42 @@
             font-size: 2rem;
             padding-top: 20px;
         }       
+
+        .price-bottom .row {
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            margin: 5rem auto;
+        }
+
+        .about-us-img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .about-us-text {
+            font-size: 1.5rem;
+        }
+
+        .about-us .row {
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            margin: 5rem auto;
+        }
+
+        .s4{
+            width: 100px;
+            height: 150px;
+        }
+
+        .about-us-people-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            object-fit: cover;
+        }
+        
 
     }

@@ -59,7 +59,7 @@ var mySwiperPrice = new Swiper('.s4', {
       delay: 2000,
       disableOnInteraction: false,
   },
-  effect: 'fade',
+  // effect: 'fade',
   
   loop: true,
   pagination: {

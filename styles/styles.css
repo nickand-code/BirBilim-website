@@ -233,14 +233,14 @@
         }
 
         .paragraph-lg{
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 600;
             color: #3A83FF;
-            padding-top: 3rem;
+            padding-top: 2.5rem;
         }
         
         .mobile-number{
-            margin-top: 100px;
+            margin-top: 70px;
         }
         
         .fas{
@@ -253,7 +253,7 @@
         }
     
         .mobile-number-text-lg{
-            font-size: 2.5rem;
+            font-size: 2.1rem;
             font-family: 'Lato', sans-serif;
         }
 
@@ -282,7 +282,7 @@
         }
 
         .price-text-area {
-            width: 60%;
+            width: 300px;
             margin: 30px auto 60px auto;
         }
 
@@ -328,12 +328,12 @@
         .about-us-paragraph {
             font-size: 1.3rem;
             margin: 30px auto 0 auto;
-            width: 350px;
+            width: 80%;
         }   
 
         .s4{
             width: 60%;
-            height: 350px;
+            height: 370px;
         }
 
         .about-us-people-img {
@@ -345,7 +345,8 @@
         }
 
         .s4 .about-us-paragraph {
-            width: 300px;
+            width: 220px;
+            font-size: 1rem;
         }
 
         .parallax1 {

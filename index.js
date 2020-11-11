@@ -67,5 +67,6 @@ var mySwiperPrice = new Swiper('.s4', {
       type: 'bullets',
     },
 });
+
 $('.parallax-window').parallax({imageSrc: 'images/parallax1.jpg'});
   

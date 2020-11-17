@@ -17,7 +17,7 @@ var mySwiper = new Swiper('.s1', {
     },
   });
 
-var mySwiperPrice = new Swiper('.s2', {
+var mySwiperPrice1 = new Swiper('.s2', {
   spaceBetween: 0,
   autoplay: {
       delay: 2000,
@@ -35,7 +35,7 @@ var mySwiperPrice = new Swiper('.s2', {
   },
 });
 
-var mySwiperPrice = new Swiper('.s3', {
+var mySwiperPrice2 = new Swiper('.s3', {
   spaceBetween: 0,
   autoplay: {
       delay: 2000,
@@ -53,7 +53,7 @@ var mySwiperPrice = new Swiper('.s3', {
   },
 });
 
-var mySwiperPrice = new Swiper('.s4', {
+var mySwiperNames = new Swiper('.s4', {
   spaceBetween: 0,
   autoplay: {
       delay: 2000,

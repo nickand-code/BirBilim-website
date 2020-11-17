@@ -8,11 +8,88 @@
     }
 
     body{
+        width: 100%;
         color: black;
         background-color: white;
         margin: 0;
         padding: 0;
         font-family: 'Raleway', sans-serif;
+
+    }
+
+    /* Form */
+    
+    /* .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+    } */
+    
+    .gradient-form {
+        width: 100%;
+        height: 700px;
+        background: rgb(58,131,255);
+        background: linear-gradient(90deg, rgba(58,131,255,1) 0%, rgba(5,171,255,1) 100%);
+    }
+    .div-message {
+        height: 300px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        margin: 0 auto;
+        align-items: center;
+        
+    }
+    
+    .div-message, .form-data {
+      max-width: 800px;
+    }
+    .form-data {
+        margin: 0 auto;
+    }
+    .form-data .checkbox {
+      font-weight: 400;
+    }
+    .form-data .form-control {
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-data .form-control:focus {
+        z-index: 2;
+    }
+
+    .form-name, .form-number {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .form-data h1 {
+        margin-bottom: 20px;
+    }
+
+    .btn-form {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Navbar */
+    .nav--item .nav-icon {
+        margin: auto 0;
+    }
+
+    .link-text1, .link-text2, .nav-icon {
+        text-align: center;
     }
 
     .nav-bar {
@@ -45,22 +122,9 @@
         transition: var(--transition-speed);
     }
 
-    .nav--link svg {
-        min-width: 2rem;
-        margin: 1rem 0;
-    }
-
-
-    .fa-primary{
-        color: #406FFF;
-    }
-
-    /* .fa-secondary{
-        color: #0a5bff;
-    } */
-
-    .fa-primary, .fa-secondary {
+    .mobile-number i:hover {
         transition: var(--transition-speed);
+        color: #3A83FF;
     }
 
     .logo{
@@ -176,27 +240,73 @@
         background-color:#3A83FF;
     }
 
+    .myButton {
+        text-decoration:none;
+        margin: 5px;
+    }
+
+    .btn {
+        border-radius: 35px;
+    }
+
+    .btn-whatsapp {
+        background-color:#44c767;
+        color: #FFFFFF;
+        font-size: 1.2rem;
+    }
+
+    .btn-whatsapp:hover {
+        background-color: #38A656;
+    }
+
+    .section .row {
+        justify-content: center;
+    }
+
+    .section {
+        margin: 2rem 0 4rem 0;
+    }
+
     /* small screens */
     @media only screen and (max-width: 767px) {
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Form */
+        .form-data .form-name {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-bottom: -1px;
+        }
+    
+        .form-data .form-number {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
         
         /* Nav Bar */
         .nav-bar {
             bottom: 0;
-            width: 100vw;
-            height: 3rem;
+            width: 100%;
+            height: 3.5rem;
+            position: fixed;
+        }
+
+        .nav--link {
+            height: 3.5rem;
+            margin: auto 0;
         }
 
         .nav--link:hover{
-        filter: grayscale(0%) opacity(1);
-        background-color: var(--bg-secondary);
-        color: var(--text-secondary);
+            filter: grayscale(0%) opacity(1);
+            background-color: var(--bg-secondary);
+            color: var(--text-secondary);
         }
     
-        .link-text{
-            display: none;
-        }
-
-        .logo {
+        .link-text, .logo{
             display: none;
         }
 
@@ -204,8 +314,17 @@
             flex-direction: row;
         }
 
-        .nav--link {
-            justify-content: center;
+        li i {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .link-text1, .link-text2 {
+            font-size: 0.8rem;
+        }
+
+        .nav--item .nav--link {
+            display: block;
         }
 
         /* Swiper */
@@ -227,29 +346,15 @@
             display: none;
         }
 
-        
-        .section{
-            margin: 2rem;
-        }
-
         .paragraph-lg{
             font-size: 3rem;
             font-weight: 600;
             color: #3A83FF;
-            padding-top: 2.5rem;
+            padding-top: 1rem;
         }
         
         .mobile-number{
             margin-top: 70px;
-        }
-        
-        .fas{
-            padding-right: 15px;
-        }
-        
-        i:hover {
-            transition: var(--transition-speed);
-            color: #3A83FF;
         }
     
         .mobile-number-text-lg{
@@ -258,7 +363,7 @@
         }
 
         .mobile-number-text{
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-top: 15px;
             margin-bottom: 0;
         }
@@ -269,6 +374,10 @@
             margin-top: 10px;
         }
 
+        .media-btn {
+            margin: 1rem 0 1rem 0;
+        }
+
         .paragraph {
             font-size: 3.5rem;
             font-weight: 600;
@@ -277,6 +386,7 @@
         }
 
         .s2, .s3 {
+            width: 100%;
             height: 550px;
             margin: 3rem auto;
         }
@@ -327,7 +437,7 @@
 
         .about-us-paragraph {
             font-size: 1.3rem;
-            margin: 30px auto 0 auto;
+            margin: 0 auto 0 auto;
             width: 80%;
         }   
 
@@ -364,10 +474,25 @@
     /* large screens */
     @media only screen and (min-width: 768px) {
         
-        .section {
-            margin: 0 200px 0 200px;
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        /* Form */
+
+        .form-name, .form-number {
+            display: inline;
         }
 
+        .form-number {
+            margin-left: 20px;
+        }
+
+        .section1 {
+            margin-top: 8rem;
+        }
+
+        /* Navbar */
         .nav-bar {
             top: 0;
             height: 3.5rem;
@@ -400,6 +525,10 @@
         .link-text1 {
             display: none;
         }
+        
+        .link-text2 {
+            margin: auto 0 auto 0.5rem;
+        }
 
         .nav--link:hover{
             filter: grayscale(0%) opacity(1);
@@ -427,21 +556,14 @@
             font-size: 8rem;
             font-weight: 600;
             color: #3A83FF;
-
         }
 
-        .logo-part {
-            margin: 150px auto 100px auto;
+        li i {
+            font-size: 1.8rem;
         }
 
-        /* Whatsapp */
         .mobile-number {
             margin: 5rem 0 5rem 0;
-        }
-            
-        i:hover {
-            transition: var(--transition-speed);
-            color: #3A83FF;
         }
         
         .mobile-number-text-lg {
@@ -451,7 +573,11 @@
         }
 
         .mobile-number-text {
-            font-size: 2rem;
+            font-size: 3rem;
+        }
+
+        .btn-whatsapp {
+            font-size: 2.5rem;
         }
 
         .mobile-number-p {
@@ -466,7 +592,7 @@
             padding-top: 100px;
         }
 
-        /* Swiper1 */
+       /* Swiper1 */
         .s1 {
             height: 300px;
             margin: 3.5rem auto;
@@ -490,7 +616,7 @@
         /* Price  */
         .s2, .s3 {
             height: 600px;
-            margin: 3rem auto;
+            margin: 0 auto;
         }
     
         .s2, .s3 .swiper-slide{
@@ -510,7 +636,7 @@
 
         .price-text {
             font-size: 2rem;
-            padding-top: 20px;
+            margin-top: 20px;
         }       
 
         .price-bottom .row {
@@ -533,10 +659,6 @@
         .about-us-paragraph {
             font-size: 1.5rem;
             margin: 20px 0 0 25px;
-        }
-
-        .about-us {
-            margin: 100px auto 100px auto;
         }
 
         .about-us .row {

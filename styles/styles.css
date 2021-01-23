@@ -1,0 +1,470 @@
+    :root{
+        font-size: 16px;
+        --text-primary: #b6b6b6;
+        --text-secondary: #ececec;
+        --bg-primary:  #141418;
+        --bg-secondary: #141418;
+        --transition-speed: 600ms;
+    }
+
+    body{
+        width: 100%;
+        color: black;
+        background-color: var(--bg-primary);
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    /* Navbar */
+    .nav--item .nav-icon {
+        margin: auto 0;
+    }
+
+    .link-text1, .link-text2, .nav-icon {
+        text-align: center;
+    }
+
+    .nav-bar {
+        position: fixed;
+        background-color: #1E1E1E;
+        /* transition: width 200ms ease; */
+        z-index: 10;
+    }
+
+    .nav-bar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav--item {
+        width: 100% ;
+    }
+    
+    .nav--link{
+        display: flex;
+        align-items: center;
+        height: 3.5rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.7);
+        transition: var(--transition-speed);
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .img-circle{
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paragraph, .paragraph-lg {
+        font-weight: 800;
+    }
+
+    .figure-caption{
+        padding-top: 10px;
+    }
+
+    a:hover{
+        text-decoration: none;
+    }
+
+    .paragraph-lg, .paragraph, .about-us-paragraph {
+        color: #FFFFFF;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .section .row {
+        justify-content: center;
+    }
+
+    .section {
+        margin: 1rem 0 2rem 0;
+    }
+
+    /* course */
+
+    .course-row .row {
+        align-items: center;
+        margin: 50px 30px;
+    }
+
+    .course-card {
+        height: 400px;
+        width: 300px;
+        background-color: #1E1E1E;
+        border-radius: 15px;
+        margin: 50px auto;
+        text-align: center;
+        filter: drop-shadow(22px 31px 15px rgba(0, 0, 0, 0.25));
+        transition: background-color .3s;
+    }
+
+    .course-card:hover {
+        background-color: #3B3B3B;
+    }
+
+    .course-card-svg {
+        margin: 100px 0 20px 0;
+    }
+
+    .course-card-p {
+        color: #CBCBCB;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin: 0 20px 0 20px;
+    }
+
+    .modal-title {
+        font-weight: 600;
+    }
+
+    summary {
+        padding: 1em;
+        background:  #3A83FF;
+        color: #FFFFFF;
+        margin-bottom: 1em;
+        cursor: pointer;
+        outline: none;
+        border-radius: .3em;
+        font-weight: bold;
+        transition: background-color .3s;
+    }
+
+    summary:hover {
+        background: #359AFF;
+    }
+
+    details[open] summary ~ * {
+        animation: sweep .5s ease-in-out;
+    }
+
+    @keyframes sweep {
+        from {
+            opacity: 0; margin-top: -10px;
+        }
+        to {
+            opacity: 1; margin-top: 0;
+        }
+    }
+ 
+
+    /* small screens */
+    @media only screen and (max-width: 767px) {
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            display: none;
+        }
+        
+        /* Nav Bar */
+        .nav-bar {
+            bottom: 0;
+            width: 100%;
+            height: 3.5rem;
+            position: fixed;
+        }
+
+        .nav--link {
+            height: 3.5rem;
+            margin: auto 0;
+        }
+
+        .nav--link:hover{
+            filter: grayscale(0%) opacity(1);
+            background-color: var(--bg-secondary);
+            color: var(--text-secondary);
+        }
+    
+        .link-text, .logo{
+            display: none;
+        }
+
+        .nav-bar-nav {
+            flex-direction: row;
+        }
+
+        .fas, .fab {
+            font-size: 1.6rem;
+            margin-top: 5px;
+        }
+
+        li i {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .link-text1, .link-text2 {
+            font-size: 0.8rem;
+        }
+
+        .nav--item .nav--link {
+            display: block;
+        }
+
+        .paragraph-lg{
+            font-size: 3rem;
+        }
+        
+        .mobile-number{
+            margin-top: 70px;
+        }
+
+        .paragraph {
+            font-size: 3rem;
+            padding-top: 30px;
+        }
+        
+        .vector1 {
+            width: 80px;
+            height: 80px;
+            transform: rotate(-10deg);
+            position: relative;
+            top: 80px;
+            right: 35px;
+        }
+
+        .vector2 {
+            width: 40px;
+            height: 40px;
+            transform: rotate(110deg);
+            position: relative;
+            top: 100px;
+            left: 180px;
+        }
+
+        .circle1 {
+            width: 100px;
+            height: 100px   ;
+            position: relative;
+            top: 300px;
+            left: 90px;
+        }
+
+        .circle2 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 260px;
+            right: 270px;
+        }
+
+        .btn {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo-img {
+            margin: 30px auto 30px auto;
+        }
+
+        .logo-final-img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .figure-caption {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .section1 {
+            height: auto;
+            margin-bottom: 8rem;
+        
+        }
+        .about-us-paragraph {
+            font-size: 1.2rem;
+            margin: 0 auto 3rem auto;
+            width: 90%;
+        }   
+
+        .parallax1 {
+            height: 200px;
+            width: 100%;
+        }
+
+        .parallax-window {
+            min-height: 300px;
+            background: transparent;
+        }
+
+    }
+
+    /* large screens */
+    @media only screen and (min-width: 768px) {
+        
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .nav-bar {
+            top: 0;
+            height: 3.5rem;
+            width: 100vw;
+        }
+
+        header {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            margin: 0 10% 0 10%;
+        }
+
+        .logo {
+            cursor: pointer;
+        }
+
+        .link-text {
+            font-size: 1rem;
+        }
+
+        .logo-link {
+            display: none;
+        }
+
+        .t-item {
+            padding-right: 1rem;
+        }
+
+        .link-text1 {
+            display: none;
+        }
+        
+        .link-text2 {
+            margin: auto 0 auto 0.5rem;
+        }
+
+        .nav--link:hover{
+            filter: grayscale(0%) opacity(1);
+            color: var(--text-secondary);
+        }
+
+        .nav-bar-nav .nav-item .link-text {
+            display: inline;
+            transition: all 0.3s ease 0;
+        }
+
+        .nav-bar-nav .nav-item .link-text {
+            transition: opacity var(--transition-speed);
+        }
+
+        .nav--item {
+            margin-right: 20px;
+        }
+
+        .figure-caption{
+            font-size: 1rem;
+        }
+
+        .paragraph-lg{
+            font-size: 8rem;
+        }
+
+        li i {
+            font-size: 1.8rem;
+        }
+
+        .mobile-number {
+            margin: 5rem 0 5rem 0;
+        }
+
+        .paragraph {
+            font-size: 5rem;
+            padding-top: 100px;
+        }
+
+        .vector1 {
+            width: 200px;
+            height: 200px;
+            transform: rotate(-10deg);
+            position: relative;
+            top: -30px;
+            right: 150px;
+        }
+
+        .vector2 {
+            width: 80px;
+            height: 80px;
+            transform: rotate(110deg);
+            position: relative;
+            top: 20px;
+            left: 400px;
+        }
+
+        .circle1 {
+            width: 300px;
+            height: 300px   ;
+            transform: rotate(110deg);
+            position: relative;
+            top: 520px;
+            left: 250px;
+        }
+
+        .circle2 {
+            width: 120px;
+            height: 120px;
+            transform: rotate(110deg);
+            position: relative;
+            top: 420px;
+            right: 720px;
+        }
+
+        .btn {
+            font-size: 1rem;
+        }
+
+        .section1 {
+            height: 900px;
+            margin-top: 3rem;
+        }
+
+        /* Parallax */
+        .parallax1 {
+            height: 500px;
+            width: 100%;
+        }
+
+        .parallax-window {
+            min-height: 600px;
+            background: transparent;
+        }
+
+        .about-us-paragraph {
+            font-size: 1.8rem;
+            margin: 20px 0 3rem 0;
+        }
+
+        .logo-img {
+            margin: 50px auto 50px auto;
+        }
+
+        .logo-final-img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .course-row .row {
+            margin: 50px 30px;
+        }
+    }

@@ -7,6 +7,7 @@
         --transition-speed: 600ms;
     }
 
+
     body{
         width: 100%;
         color: black;
@@ -56,6 +57,28 @@
         transition: var(--transition-speed);
     }
 
+    .swiper-container {
+        background-color: white;
+        border-radius: 20px;
+        margin: 2rem auto;
+    }
+
+    .slide-text {
+        margin: 0 auto;
+    }
+
+    .swiper-container h3 {
+        color: #3A83FF;
+    }
+
+    .swiper-container p {
+        color: black;
+    }
+
+    .swiper-container img {
+        border-radius: 50%;
+    }
+
     .logo{
         width: 50px;
         height: 50px;
@@ -92,6 +115,10 @@
         text-transform: uppercase;
     }
 
+    h3 {
+        padding-top: 2rem;
+    }
+
     .section h2, .section h3, .teacher-div p {
         font-weight: 600;
     }
@@ -104,6 +131,7 @@
 
     .course-row .row {
         align-items: center;
+        margin-bottom: 2rem;
     }
 
     .course-card {
@@ -145,6 +173,7 @@
         outline: none;
         border-radius: .3em;
         font-weight: 600;
+        max-width: 400px;
         transition: background-color .3s;
     }
 
@@ -156,6 +185,21 @@
         animation: sweep .5s ease-in-out;
     }
 
+    .contacts i {
+        font-size: 2rem;
+        padding: 10px 15px 0 0;
+    }
+
+    .contacts a {
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+
+    .contacts a:hover {
+        color: var(--text-primary);
+    }
+
     @keyframes sweep {
         from {
             opacity: 0; margin-top: -10px;
@@ -164,8 +208,7 @@
             opacity: 1; margin-top: 0;
         }
     }
- 
-
+    
     /* small screens */
     @media only screen and (max-width: 767px) {
 
@@ -238,6 +281,7 @@
 
         .section p {
             padding-bottom: 1rem;
+            margin-bottom: 0;
         }
 
         .paragraph {
@@ -245,8 +289,16 @@
             padding: 5px 0;
         }
 
-        .section1-text, .section2-text, .section3-text {
-            padding: 3rem 5%;
+        .section1-text{
+            padding: 4rem 5%;
+        }
+
+        .section3-text {
+            padding: 2rem 5% 0 5%;
+        }
+
+        .section3-list-text, .section2-text {
+            padding: 1rem 5%;
         }
 
         .figure-caption {
@@ -267,6 +319,25 @@
         .teacher-div img {
             width: 200px;
             height: 200px;
+        }
+
+        .swiper-container {
+            width: 95%;
+            height: 350px;
+        }
+
+        .slide-text p {
+            margin: 0 1.5rem;
+        }
+
+        .slide-text h3{
+            padding: 1rem 0 1rem 0;
+        }
+
+        .swiper-container img {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
         }
 
     }
@@ -290,7 +361,7 @@
             justify-content: space-between;
             align-items: center;
             display: flex;
-            margin: 0 10% 0 10%;
+            margin: 0 10%;
         }
 
         .logo {
@@ -353,11 +424,6 @@
             text-align: center;
         }
 
-
-        .section3 {
-            height: 600px;
-        }
-
         .teacher-div img {
             width: 200px;
             height: 200px;
@@ -370,6 +436,7 @@
 
         .section p {
             padding-bottom: 2rem;
+            margin-bottom: 0;
         }
 
         .paragraph {
@@ -377,9 +444,14 @@
             padding: 5px 0;
         }
 
-        .section1-text, .section2-text, .section3-text {
-            padding: 3rem 10%;
+        .section1-text, .section2-text, .section3-list-text, .section3-text {
+            padding: 1rem 10%;
         }
+
+        .section1-text h1 {
+            padding-top: 5rem;
+        }
+
 
         /* Parallax */
         .parallax1 {
@@ -400,17 +472,46 @@
             width: 300px;
             height: 300px;
         }
+
+        .swiper-container {
+            width: 500px;
+            height: 350px;
+        }
+
+        .slide-text p {
+            margin: 0 2rem;
+        }
+
+        .slide-text h3{
+            padding: 1rem 0 1rem 0;
+        }
+
+        .swiper-container img {
+            width: 100px;
+            height: 100px;
+            margin-top: 1rem;
+        }
     }
 
     .custom-shape-divider-bottom-1611908468 {
         position: absolute;
-        bottom: 0;
         left: 0;
         width: 100%;
         overflow: hidden;
         line-height: 0;
-        transform: rotate(180deg);
         margin-top: 5rem;
+    }
+
+    #top-svg {
+        transform: rotate(180deg);
+        top: 10px;
+        bottom: 0;
+    }
+
+    #bottom-svg {
+        position: relative;
+        bottom: 1px;
+
     }
     
     .custom-shape-divider-bottom-1611908468 svg {
@@ -436,6 +537,6 @@
     @media (max-width: 767px) {
         .custom-shape-divider-bottom-1611908468 svg {
             width: calc(124% + 1.3px);
-            height: 99px;
+            height: 55px;
         }
     }

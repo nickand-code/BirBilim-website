@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
 </head>
 <body>
@@ -25,14 +26,14 @@
         </li>
   
         <li class="nav--item t-item">
-          <a data-easing="easeInOutQuad" href="#price" class="nav--link">
-            <p class="nav-icon"><i class="fas fa-tenge"></i></p>
-            <p class="link-text2">Тарифы</p>
+          <a data-easing="easeInOutQuad" href="#courses" class="nav--link">
+            <p class="nav-icon"><i class="fas fa-shapes"></i></p>
+            <p class="link-text2">Курсы</p>
           </a>
         </li>
   
         <li class="nav--item">
-          <a href="https://wa.link/m3pp04" class="nav--link">
+          <a href="https://wa.link/m3pp04" class="nav--link" target="_blank">
             <p class="nav-icon"><i class="fab fa-whatsapp"></i></p>
             <p class="link-text1">WhatsApp</p>
           </a>
@@ -48,7 +49,7 @@
     </header>
   </nav>
   
-  <div class="section section1">
+  <div class="section section1" style="position: relative;">
     <div class="section1-text">
       <h1 style="color: white;"> Хотите набрать максимальный балл?</h1>
       <p style="color: white;" class="paragraph"">Подготовим вас к международным экзаменам с учителями топовых ВУЗОВ</p>
@@ -56,13 +57,14 @@
         <button id="btn1" type="button" class="btn btn-primary">Оставьте заявку</button>
       </a> 
     </div>
+    <div id="top-svg" class="custom-shape-divider-bottom-1611908468">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
   </div>
   
-  <!-- <div class="custom-shape-divider-bottom-1611908468">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-  </div> -->
+  
   
   <div class="section">
     <div class="section2-text text-center">
@@ -71,7 +73,7 @@
       </p>
       <h2>Курсы</h2>
       <p class="paragraph">Выбери подходящую, нажми и запишись</p>
-      <div class="course-row">
+      <div id="courses" class="course-row">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <a data-bs-toggle="modal" data-bs-target="#myModal">
@@ -132,36 +134,112 @@
     </div>
     <div class="section3-list">
       <h2 class="text-center">Что и как?</h2>
+      <div class="section3-list-text">
+          <h3>Запись на бесплатный пробный урок</h3>
+          <p>В этом сайте вы можете записатся на бесплатный пробный урок. Выбераете для вас необходивый урок, и время для провождения пробного. </p>
+          <a href="http://eepurl.com/hjqQ4T" class="myButton-media" target="_blank">
+            <button id="btn1" type="button" class="btn btn-primary">Оставьте заявку</button>
+          </a> 
+          
+          <h3>Курс</h3>
+          <p>После пробного урока, если вас удовлетворил пробный урок вы можете записатся на основной курс по скидке 5%. Разберем каждый из них. </p>
+          <details>
+            <summary>Про SAT Reasoning</summary>
+            <h4>Подробнее о темах R&W</h3>
+            <ul>
+              <li>Command of Evidence</li>
+              <li>Words in Context</li>
+              <li>Analysis in History/Social Studies, Science</li>
+              <li>Expression of Ideas</li>
+              <li>Standart English Conventions</li>
+            </ul>
+            <h4>Подробнее о темах Math</h3>
+            <ul>
+              <li>Problem Solving</li>
+              <li>Data Analysis</li>
+              <li>Advanced Math</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Про IELTS</summary>
+            <ul></ul>
+          </details>
+          <details>
+            <summary>Про NUFYPET</summary>
+            <ul></ul>
+          </details>
+          <h3>Уроки</h3>
+          <p>Уроки будут проходить по 50 минут. Про наших учителей можете прочитать ниже. Уроки будут ровно сбалансированы в плане разнобразности. Тоесть уроки будут: <br> <br>
+
+            1) Интерактивные - kahoot игра <br> <br>
+            
+            2) Асинхронные уроки <br> <br>
+            
+            Онлайн уроки будут проходить на платформах как Zoom, Google Meet, Discord, Kahoot.
+            </p>
+      </div>
     </div>
   </div>
 
-  <div class="section section3 text-center">
+  
+  <div class="section section3 text-center" style="position: relative;">
+    <div id="bottom-svg" class="custom-shape-divider-bottom-1611908468">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
     <div class="section3-text text-center">
       <h2 style="color: white;">Отзывы</h2>
-    <!-- swiper -->
+      <!-- swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/parallax.png" alt="">
+            <div class="slide-text">
+              <h3>Name Surname</h3>
+              <p class="text-left">Маган катты унады, дамбал аж жыртылды, Айлтс алгам, саттан 0 алдым.
+              Айтеур норм десен де болады и болмайды, айтеур бирденке жазсам болдыгой </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
 
-    <h2 style="color: white;">Учители</h2>
-    <div class="row text-center">
-      <div class="col-sm-12 col-md-6 col-lg-4 teacher-div">
-        <img src="images/teacher1.png" alt="teacher#1">
-        <h3>Айдана Исабай</h3>
-        <p>Duke Kunshan University <br>
-          IELTS - 7.5 <br>
-          SAT - 1440/1600 <br>
-          IB SUBJECT TEST: <br>
-          MATH - 7/7 <br>
-          ENGLISH - 7/7
-        </p>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 teacher-div">
-        <img src="images/teacher2.png" alt="teacher#2">
-        <h3>Серик Бериковичь</h3>
-        <p>Nazarbayev University <br>
-          SAT Reasoning: 1430/1600 <br>
-          SAT Subject Biology: 700/800
-        </p>
+
+      <h2 style="color: white;">Учители</h2>
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 teacher-div">
+          <img src="images/teacher1.png" alt="teacher#1">
+          <h3>Айдана Исабай</h3>
+          <p>Duke Kunshan University <br>
+            IELTS - 7.5 <br>
+            SAT - 1440/1600 <br>
+            IB SUBJECT TEST: <br>
+            MATH - 7/7 <br>
+            ENGLISH - 7/7
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 teacher-div">
+          <img src="images/teacher2.png" alt="teacher#2">
+          <h3>Серик Бериковичь</h3>
+          <p>Nazarbayev University <br>
+            SAT Reasoning: 1430/1600 <br>
+            SAT Subject Biology: 700/800
+          </p>
+        </div>
       </div>
-    </div>
+
+      <h2 style="color: white;">Остались вопросы?</h2>
+      <p style="color: white;" class="paragraph">Запишись на бесплатный пробный урок, и задай все интересующие вопросы!</p>
+
+      <h2 style="color: white;">Контакты</h2>
+      <div class="contacts">
+        <a href="https://t.me/birbilimkz" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://wa.link/m3pp04" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@birbilim" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://instagram.com/birbilim.kz/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
 
     </div>
   </div>
@@ -212,7 +290,9 @@
     </div>
   </div> -->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>

@@ -536,14 +536,12 @@
 
     #top-svg {
         transform: rotate(180deg);
-        top: 10px;
-        bottom: 0;
+        bottom: -1px;
     }
 
     #bottom-svg {
         position: relative;
         bottom: 1px;
-
     }
     
     .custom-shape-divider-bottom-1611908468 svg {

@@ -17,6 +17,11 @@
         font-family: 'Montserrat', sans-serif;
     }
 
+    .mc-field-group {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
     /* Navbar */
     
     .nav--item .nav-icon {
@@ -152,6 +157,10 @@
 
     .features-p{
         color: #8f8f8f
+    }
+
+    #features {
+        margin-bottom: 1rem;
     }
 
     /* course card*/

@@ -127,6 +127,33 @@
         border-radius: 30px;
     }
 
+    /* Features */
+    
+    .icons{
+        color: #3a83ff;
+        margin-bottom: 0.5rem;
+        transition: .3s;
+    }
+
+    .icons:hover{
+        color: #359aff;
+    }
+
+    .features-h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+
+    .feature-box{
+        text-align: center;
+        padding: 3%;
+    }
+
+    .features-p{
+        color: #8f8f8f
+    }
+
     /* course card*/
 
     .course-row .row {
@@ -166,19 +193,24 @@
 
     summary {
         padding: 1em;
-        background:  #3A83FF;
-        color: #FFFFFF;
+        background:  #3a83ff;
+        color: #ffffff;
         margin-bottom: 1em;
         cursor: pointer;
         outline: none;
         border-radius: .3em;
         font-weight: 600;
-        max-width: 400px;
+        
         transition: background-color .3s;
     }
 
+    details {
+        max-width: 400px;
+        margin: 0 auto 1em auto;
+    }
+
     summary:hover {
-        background: #359AFF;
+        background: #359aff;
     }
 
     details[open] summary ~ * {
@@ -294,7 +326,7 @@
         }
 
         .section3-text {
-            padding: 2rem 5% 0 5%;
+            padding: 2rem 5% 4rem 5%;
         }
 
         .section3-list-text, .section2-text {
